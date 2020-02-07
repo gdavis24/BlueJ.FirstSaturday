@@ -65,32 +65,37 @@ public class WriteLoops {
 
     public int byTwoTo32() {
         int w = 0;
-        
+        for (int i = 0; i < 33; i += 2) {
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
         w = w + 1;
         // each time through the loop
+      }
         return w;
     }
 
     public int countDownFrom5000() {
         int w = 0;
-
+        for (int i = 1; i < 5001; i += 11){
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
         w = w + 1;
         // each time through the loop
-
+      }
         return w;
     }
 
     public int nestedFors() {
         int w = 0;
-
+        for (int i = 0; i < 20; i++){
+          for (int j = 0; j < 5; j++){
+            w = w + 1;
+          }
+        }
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
                 // calling
-                w = w + 1;
+
                 // each time through the inner loop
 
         return w;
